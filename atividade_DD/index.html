@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papel & Arte - Papelaria Criativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="promo-banner text-center">
+        <p class="promo-text">"Baixo custo, alto impacto visual." </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-pencil-fill"></i> StudioDesk
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="cart-icon me-3 position-relative">
+                        <i class="bi bi-cart3 fs-4 text-primary"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="bi bi-person-circle"></i> Entrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Papelaria Criativa para Você</h1>
+            <p class="lead mb-4">Encontre os melhores materiais para escritório, escola e artesanato. Tudo o que você precisa para dar vida às suas ideias.</p>
+            <a href="#produtos" class="btn btn-primary btn-lg me-2">Ver Produtos</a>
+            <a href="#sobre" class="btn btn-secondary btn-lg">Conheça-nos</a>
+        </div>
+    </section>
+    
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos em Destaque</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card">
+                        <div class="position-relative">
+                            <img src="imagens/caderno.jpg" class="card-img-top" alt="Cadernos artesanais">
+                            <span class="product-badge">Mais Vendido</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cadernos Artesanais</h5>
+                            <p class="card-text">Cadernos com capas únicas, feitas à mão, perfeitos para anotações especiais.</p>
+                            <p class="price">R$ 8,63</p>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-product="Caderno Artesanal" data-price="24.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card">
+                        <div class="position-relative">
+                            <img src="imagens/caneta_produto.jpg" class="card-img-top" alt="Canetas coloridas">
+                            <span class="product-badge">Novidade</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Canetas Coloridas</h5>
+                            <p class="card-text">Pacote com 12 cores vibrantes para destacar suas anotações e desenhos.</p>
+                            <p class="price">R$ 25,00</p>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-product="Canetas Coloridas" data-price="18.50">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card">
+                        <img src="imagens/escritório.jpg" class="card-img-top" alt="Materiais de escritório">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Escritório</h5>
+                            <p class="card-text">Conjunto completo com clipes, grampos, post-its e organizadores.</p>
+                            <p class="price">R$ 63,90</p>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-product="Kit Escritório" data-price="32.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card">
+                        <div class="position-relative">
+                            <img src="imagens/papeis.jpg" class="card-img-top" alt="Papéis especiais">
+                            <span class="product-badge">Oferta</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Papéis Especiais</h5>
+                            <p class="card-text">Variedade de papéis para scrapbooking, cartonagem e projetos criativos.</p>
+                            <p class="price">R$ 12,90</p>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-product="Papéis Especiais" data-price="12.90">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Sobre a StudioDesk</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="imagens/Design sem nome.jpg" alt="Nossa papelaria" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Nossa História</h3>
+                    <p>A StudioDesk nasceu em 2025 com o objetivo de oferecer materiais de papelaria de qualidade, combinando funcionalidade e criatividade. Começamos como uma pequena loja no centro da cidade e hoje atendemos clientes em todo o Brasil através do nosso e-commerce.</p>
+                    <p>Acreditamos que os materiais certos podem inspirar grandes ideias, por isso selecionamos cuidadosamente cada produto que oferecemos.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5>Qualidade Garantida</h5>
+                                <p>Todos os produtos passam por rigoroso controle de qualidade.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                                <h5>Entrega Rápida</h5>
+                                <p>Enviamos para todo o Brasil com prazo de entrega otimizado.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <h5>Suporte Dedicado</h5>
+                                <p>Equipe especializada para ajudar em todas as suas dúvidas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                </div>
+                                <h5>Sustentabilidade</h5>
+                                <p>Produtos eco-friendly e práticas sustentáveis em nossa operação.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="depoimentos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Adoro os produtos da Papel & Arte! A qualidade é excelente e sempre encontro algo novo e criativo para meus projetos."</p>
+                        <div class="mt-3">
+                            <strong>Matheus (O de Verde nos slides)</strong>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Como professora, preciso de materiais resistentes e de boa qualidade. A Papel & Arte nunca me decepcionou!"</p>
+                        <div class="mt-3">
+                            <strong>Janeiro fevereiro de Março Abril</strong>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Comprei os cadernos artesanais para presentear e todo mundo amou! São lindos e únicos, com certeza voltarei a comprar."</p>
+                        <div class="mt-3">
+                            <strong>Colápsio Cardíaco da Silva</strong>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3"><i class="bi bi-pencil-fill"></i> StudioDesk</h5>
+                    <p>Sua papelaria criativa com os melhores produtos para escritório, escola e projetos artísticos.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-light text-decoration-none">Início</a></li>
+                        <li><a href="#produtos" class="text-light text-decoration-none">Produtos</a></li>
+                        <li><a href="#sobre" class="text-light text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#contato" class="text-light text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Informações de Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> Rua das Papelarias, 123 - Centro</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i> (11) 3456-7890</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> contato@papelarte.com.br</li>
+                        <li><i class="bi bi-clock-fill me-2"></i> Seg-Sex: 9h às 18h | Sáb: 9h às 13h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 StudioDesk. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entrar na Minha Conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Não tem uma conta? <a href="#" class="text-decoration-none">Cadastre-se</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-notification alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Produto adicionado ao carrinho!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let cartCount = 0;
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        const cartNotification = document.querySelector('.cart-notification');
+        const cartCountElement = document.querySelector('.cart-count');
+        
+        cartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.getAttribute('data-product');
+                const productPrice = this.getAttribute('data-price');
+                
+                cartCount++;
+                cartCountElement.textContent = cartCount;
+                
+                cartNotification.style.display = 'block';
+                setTimeout(() => {
+                    cartNotification.style.display = 'none';
+                }, 3000);
+                
+                console.log(`Produto adicionado: ${productName} - R$ ${productPrice}`);
+            });
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            contactForm.reset();
+        });
+        
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+
+            const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+            loginModal.hide();
+            alert('Login realizado com sucesso!');
+            loginForm.reset();
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('footer .text-center p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2023', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
